@@ -1,0 +1,11 @@
+Phrase = input('Please enter the phrase you want to check below.\n')
+string = Phrase
+frequency = {}
+
+for character in string:
+  if character in frequency:
+    frequency[character] += 1
+  else:
+    frequency[character] = 1
+
+print ("Per character frequency in '{}' is \n {}".format(string, str(frequency))) 
